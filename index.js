@@ -110,7 +110,6 @@ async function qidian() {
         sendMail(result)
         console.log(result)
     }
-    console.log(result)
 }
 
 async function zongheng() {
@@ -136,7 +135,6 @@ async function zongheng() {
         sendMail(result)
         console.log(result)
     }
-    console.log(result)
 }
 
 
