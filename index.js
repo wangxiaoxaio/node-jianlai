@@ -41,7 +41,7 @@ function main() {
         // 同上
         setInterval(() => {
             qidian()
-        }, 5000)
+        }, 1000)
     }
 }
 
@@ -63,8 +63,8 @@ function sendMail(result) {
         port: 587,
         secure: false,
         auth: {
-            user: '1532168980@qq.com',
-            pass: 'gcibllhgqgiuhcfd'
+            user: user_data['Semail'],
+            pass: '**********' //使用你自己生成的授权码
         }
     })
     let mailOptions = {
