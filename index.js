@@ -38,13 +38,13 @@ function main() {
     // 用户选择纵横，隔一段时间发一次请求
     setInterval(() => {
       zongheng()
-    }, 5000);
+    }, 40000);
   }
   if (user_data["website"] === 2) {
     // 同上
     setInterval(() => {
       qidian()
-    }, 5000);
+    }, 40000);
   }
 }
 // return main
@@ -111,7 +111,7 @@ async function qidian() {
     result["name"] = user_data["title"];
     if (result["time"] === "1分钟前") {
       await sendMail(result);
-      console.log(result);
+      // console.log(result);
     }
   } catch (e) {
     console.error(`qidian error:${e}`);
@@ -136,10 +136,10 @@ async function zongheng() {
     result["time"] = time;
     result["title"] = title;
     result["name"] = user_data["title"];
-    console.log(result);
+    // console.log(result);
     if (result["time"] === "1分钟前") {
       await sendMail(result);
-      console.log(result);
+      // console.log(result);
     }
   } catch (e) {
     console.error(`zongheng error:${e}`);
